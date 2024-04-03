@@ -35,7 +35,7 @@ def test_login_to_new_page_title(page: Page, login):
 # you can run this test using mark
 # pytest -m login -v
 @pytest.mark.login
-def test_sign_up_to_page_with_standard_user(page: Page, login):
+def test_login_to_page_with_standard_user(page: Page, login):
     page.goto(login.login_page)
 
     page.fill('input[data-test="username"]', login.username)
@@ -49,7 +49,7 @@ def test_sign_up_to_page_with_standard_user(page: Page, login):
 # you can run this test using mark
 # pytest -m login_locked -v
 @pytest.mark.login_locked
-def test_sign_up_to_page_with_locked_user(page: Page, login):
+def test_login_to_page_with_locked_user(page: Page, login):
     page.goto(login.login_page)
     login.username = "locked_out_user"
 
