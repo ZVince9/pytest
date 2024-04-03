@@ -59,8 +59,3 @@ def test_sign_up_to_page_with_locked_user(page: Page, login):
     page.click('input[data-test="login-button"]')
 
     expect(page.locator('button[data-test="error-button"]')).to_be_visible()
-
-
-
-
-# test
