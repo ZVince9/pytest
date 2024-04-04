@@ -4,4 +4,13 @@
 
 ## Getting Started
 
+Install needed dependecnies:
+
 `pip install -r requirements.txt`
+
+
+## To run the tests
+
+`pytest`
+`pytest -v` - to see nicer output
+`pytest -m login -v` - to run with specific mark
