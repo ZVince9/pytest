@@ -15,7 +15,7 @@ def login(page: Page):
     return login
 
 
-def test_login_to_page_title(page: Page, login):
+def test_page_title(page: Page, login):
 
     page.goto(login.login_page)
 
@@ -23,7 +23,7 @@ def test_login_to_page_title(page: Page, login):
     expect(page).to_have_title(re.compile("Swag Labs"))
 
 
-def test_login_to_new_page_title(page: Page, login):
+def test_new_page_title(page: Page, login):
     login.login_page = 'https://google.com'
 
     page.goto(login.login_page)
