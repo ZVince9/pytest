@@ -11,6 +11,6 @@ Install needed dependecnies:
 
 ## To run the tests
 
-`pytest`
-`pytest -v` - to see nicer output
-`pytest -m login -v` - to run with specific mark
+- `pytest`
+- `pytest -v` - to see nicer output
+- `pytest -m login -v` - to run with specific mark
