@@ -1,7 +1,0 @@
-__pycache__
-
-# Ignore PyCharm IDE specific files
-.idea/
-
-# Ignore Python virtual environment directory
-.venv/
