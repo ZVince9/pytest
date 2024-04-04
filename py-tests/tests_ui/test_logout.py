@@ -27,3 +27,16 @@ def test_login_and_logout(page: Page, login):
 
     expect(page.locator('div[data-test="login-container"]')).to_be_visible()
 
+
+@pytest.mark.skip
+@pytest.mark.logout
+def test_login_logout_skip():
+    print("This test should be skipped")
+
+
+@pytest.mark.xfail
+@pytest.mark.logout
+def test_login_logout_fail():
+    print("This test should be failed")
+    assert 20 == 100
+
