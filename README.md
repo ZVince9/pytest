@@ -14,3 +14,4 @@ Install needed dependecnies:
 - `pytest`
 - `pytest -v` - to see nicer output
 - `pytest -m login -v` - to run with specific mark
+- `pytest -n 3` - to run with more workers defined [3]
