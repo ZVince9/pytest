@@ -14,16 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up Python
+    - name: Set up Python and create virtual environment
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-
-    - name: Create virtual environment
-      run: python -m venv venv
-
-    - name: Activate virtual environment
-      run: source venv/bin/activate
 
     - name: Install dependencies
       run: |
@@ -37,20 +31,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       
-    - name: Set up Python
+    - name: Set up Python and activate virtual environment
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-
-    - name: Activate virtual environment
-      run: source venv/bin/activate
 
     - name: Install Playwright browsers
       run: |
         pip install pytest-playwright
         playwright install
 
-    - name: Run
+    - name: Run tests
+      run: |
+        pytest
