@@ -6,8 +6,8 @@
 
 Make sure you setup virtual env and activate it:
 
-`python3 -m venv pytest-env`
-`source pytest-env/bin/activate`
+- `python3 -m venv pytest-env`
+- `source pytest-env/bin/activate`
 
 Install needed dependencies:
 
