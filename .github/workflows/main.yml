@@ -19,6 +19,9 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install Playwright browsers
+      run: playwright install
+
     - name: Create virtual environment
       run: python -m venv venv
 
